@@ -1,7 +1,7 @@
 // variable to track number of animals on screen
 var animalsOnScreen = 0;
 
-//show image of animal 
+// show image of animal 
 function revealAnimal(animal) {
   document.getElementById('card-' + animal).classList.add('visible');
   var btn = document.getElementById('btn-' + animal);
@@ -32,7 +32,7 @@ function resetZoo() {
   updateCounter();
 }
 
-//update the count
+// update the count
 function updateCounter() {
   document.getElementById('counter').textContent = 'Animals on screen: ' + animalsOnScreen;
 }
