@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>What's That Animal?</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>Interactive Reveal Whats That Animal</h1>
+  <div id="zoo-wrapper">
+    <div class="header-box">Welcome to the Interactive Reveal What's that Animal UI</div>
+    <div class="header-box">Click on the buttons below to reveal the animal images</div>
+    <div id="display-area">
+
+      <!-- cat slot -->
+      <div class="animal-slot" id="slot-cat">
+        <div class="animal-card" id="card-cat">
+          <img src="tabby-cat.jpg" alt="Cat" />
+          <button class="hide-btn" onclick="hideAnimal('cat')">Hide Result</button>
+        </div>
+        <button class="reveal-btn" id="btn-cat" onclick="revealAnimal('cat')">Reveal a cat</button>
+      </div>
+
+      <!-- dog slot -->
+      <div class="animal-slot" id="slot-dog">
+        <div class="animal-card" id="card-dog">
+          <img src="dog.jpg" alt="Dog" />
+          <button class="hide-btn" onclick="hideAnimal('dog')">Hide Result</button>
+        </div>
+        <button class="reveal-btn" id="btn-dog" onclick="revealAnimal('dog')">Reveal a dog</button>
+      </div>
+
+      <!-- cow slot -->
+      <div class="animal-slot" id="slot-cow">
+        <div class="animal-card" id="card-cow">
+          <img src="cow.jpg" alt="Cow" />
+          <button class="hide-btn" onclick="hideAnimal('cow')">Hide Result</button>
+        </div>
+        <button class="reveal-btn" id="btn-cow" onclick="revealAnimal('cow')">Reveal a cow</button>
+      </div>
+
+    </div> <!-- end display area -->
+  </div> <!-- end zoo -->
+
+  <div id="bottom-bar">
+    <button id="reset-btn" onclick="resetZoo()">Reset Zoo</button>
+    <div id="counter">Animals on screen: 0</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
