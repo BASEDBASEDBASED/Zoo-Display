@@ -1,7 +1,7 @@
 // variable to track number of animals on screen
 var animalsOnScreen = 0;
 
-//show image of aniaml 
+//show image of animal 
 function revealAnimal(animal) {
   document.getElementById('card-' + animal).classList.add('visible');
   var btn = document.getElementById('btn-' + animal);
