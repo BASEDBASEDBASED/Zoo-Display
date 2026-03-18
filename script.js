@@ -1,7 +1,7 @@
 // variable to track number of animals on screen
 var animalsOnScreen = 0;
 
-//show animal image 
+//show image of aniaml 
 function revealAnimal(animal) {
   document.getElementById('card-' + animal).classList.add('visible');
   var btn = document.getElementById('btn-' + animal);
@@ -11,7 +11,7 @@ function revealAnimal(animal) {
   updateCounter();
 }
 
-// hide animal image
+// hide the animal image
 function hideAnimal(animal) {
   document.getElementById('card-' + animal).classList.remove('visible');
   var btn = document.getElementById('btn-' + animal);
@@ -21,7 +21,7 @@ function hideAnimal(animal) {
   updateCounter();
 }
 
-// reset everything
+// reset everything back to original state
 function resetZoo() {
   var animals = ['cat', 'dog', 'cow'];
   animals.forEach(function(animal) {
@@ -32,7 +32,7 @@ function resetZoo() {
   updateCounter();
 }
 
-//update count
+//update the count
 function updateCounter() {
   document.getElementById('counter').textContent = 'Animals on screen: ' + animalsOnScreen;
 }
